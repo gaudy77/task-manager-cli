@@ -10,3 +10,7 @@ Pythonで作成したタスク管理アプリです。
 
 ## 使用言語
 - Python
+
+
+## Learning Git
+This is my practice commit.
