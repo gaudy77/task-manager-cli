@@ -15,5 +15,6 @@ Pythonで作成したタスク管理アプリです。
 ## Learning Git
 This is my practice commit.
 
-## Feature Branch
-This change is made in feature-test branch.
+practice-branch
+## Practice Git
+This is a practice commit in practice-branch.
