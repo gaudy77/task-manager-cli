@@ -13,25 +13,21 @@ while True:
     #追加
     task_name = input("追加するタスク名: ")
     tasks.append(task_name)
+    print(task_name, "を追加しました")
 
   elif choice == "2":
     #一覧
     for i, name in enumerate(tasks, 1):
       print(i,":", name)
 
-  elif choice == "3":
+  elif choice == "3": 
     #削除
-    '''
-    task_name = input("削除するタスク名: ")
-    if task_name in tasks:
-      tasks.remove(task_name)
-    else:
-      print("タスクがありません")
-    '''
     try:
       task_num = int(input("削除するタスク番号: "))
       if 1 <= task_num <= len(tasks):
-        tasks.pop(task_num-1)
+        deleted_task = tasks[task_num -1]
+        tasks.pop(task_num-1)        
+        print(f"{task_num}: {deleted_task}　を削除しました")
       else:
         print("その番号はありません")
     except ValueError:
